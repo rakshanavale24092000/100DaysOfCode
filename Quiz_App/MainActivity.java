@@ -56,26 +56,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         quizStat = findViewById(R.id.textQuizStat);
 
-//        if (savedInstanceState != null){       This or the onRestoreInstanceState can be used 
-////            score = savedInstanceState.getInt(SCORE_KEY);
-////            mQuestionIndex = savedInstanceState.getInt(INDEX_KEY);
-////
-////            if (mQuestionIndex == 0){
-////
-////                AlertDialog.Builder quizAlert = new AlertDialog.Builder(this);
-////                quizAlert.setTitle("Game is finished");
-////                quizAlert.setMessage("score is:"+ score);
-////                quizAlert.setPositiveButton("Finish game?", new DialogInterface.OnClickListener() {
-////                    @Override
-////                    public void onClick(DialogInterface dialog, int which) {
-////                        finish();
-////                    }
-////                });
-////            }
-//        }else{
-//            score = 0;
-//            mQuestionIndex = 0;
-//        }
+
 
         mTextQuestion = findViewById(R.id.textQuestion);
 
