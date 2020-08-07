@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">jobCriteria</string>
+    <string name="heading">WELCOME TO JOB SELECTION</string>
+    <string name="criteria1">What is your age?</string>
+    <string name="criteria2">Are You an Android Developer?</string>
+</resources>
