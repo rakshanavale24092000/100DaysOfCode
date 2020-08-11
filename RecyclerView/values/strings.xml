@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RecycleView</string>
+    <string-array name="Programming_Languages">
+        <item>C#</item>
+        <item>html</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+        <item>PHP</item>
+        <item>Python</item>
+        <item>Ruby</item>
+        <item>SQL</item>
+        <item>Swift</item>
+    </string-array>
+    <string-array name="Description">
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+        <item>This is description</item>
+    </string-array>
+</resources>
