@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">conditionalStatements</string>
+    <string name="text_1">Enter first Number</string>
+    <string name="text_2">Enter second Number</string>
+</resources>
