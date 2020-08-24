@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Passing-data_between_activities</string>
+    <string name="enter">Enter data to be transferred</string>
+    <string name="button">Pass</string>
+    <string name="hint">Enter name</string>
+    <string name="hello">Hello!</string>
+</resources>
