@@ -1,0 +1,21 @@
+<resources>
+<string name="app_name">The_Quiz_App</string>
+<string name="Correct">CORRECT!!</string>
+<string name="Incorrect">INCORRECT!!</string>
+<string name="First_Score">0/10</string>
+<string name="correct_toast_message">DOING GREAT!</string>
+<string name="Incorrect_toast_message">NOT GOOD!</string>
+
+<string name="q1">CATS HAVE OVER 100 VOCAL CHORDS.</string>
+<string name="q2">EMUS AND KANGAROOS CAN WALK BACKWARD.</string>
+<string name="q3"> MOSQUITOES ARE ATTRACTED TO PEOPLE WHO JUST ATE BANANAS.</string>
+<string name="q4">A QUEEN BEE CANNOT LAY 800-1,500 EGGS PER DAY.</string>
+<string name="q5"> BEAVERS CAN HOLD THEIR BREATH FOR 45 MINUTES UNDER WATER.</string>
+<string name="q6"> FLAMINGOS TURN PINK FROM EATING SHRIMP.</string>
+<string name="q7"> SAILORS ONCE THOUGHT WEARING GOLD IMPROVED EYESIGHT</string>
+<string name="q8">A BEE HAS SEVEN EYELIDS.</string>
+<string name="q9">ALL PORCUPINES FLOAT IN WATER.</string>
+<string name="q10">THERE ARE 73,360 INCHES IN A MILE.</string>
+
+
+</resources>
