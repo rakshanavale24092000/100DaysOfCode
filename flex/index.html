@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        @media screen and (min-width: 600px){
+
+            .container-1{
+            display: flex;        
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: stretch; *//* this is default*/
+            /* flex-direction: column; */
+            background: cyan;
+            }
+
+            .container-2{
+            display: flex;
+            justify-content: space-between;
+            background: greenyellow;
+             }
+        
+       
+
+        }
+        .container-3{
+            display: flex;
+            flex-wrap: wrap;
+            background: yellow;
+        }
+
+        .container-1 div, .container-2 div, .container-3 div{
+            border: 1px #000000 solid;
+        }
+        
+        .box-1{
+            flex: 1;
+            order: 3;
+        }
+        .box-2{
+            flex: 1;
+            order: 1;
+        }
+        .box-3{
+            flex: 1;
+            order: 2;
+
+        }
+        .Container-2-box{
+            flex-basis: 30%;
+        }
+        .Container-3-box{
+            flex-basis: 10%
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h1>Box one</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box-2">
+            <h1>Box two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa harum ducimus ipsa, reprehenderit incidunt impedit?</p>
+        </div>
+        <div class="box-3">
+            <h1>Box three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facilis officia autem inventore, nobis iusto! Vel nihil assumenda accusamus eaque!</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="Container-2-box">
+            <h1>Box four</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="Container-2-box">
+            <h1>Box five</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa harum ducimus ipsa, reprehenderit incidunt impedit?</p>
+        </div>
+        <div class="Container-2-box">
+            <h1>Box six</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facilis officia autem inventore, nobis iusto! Vel nihil assumenda accusamus eaque!</p>
+        </div>
+    </div>
+
+
+    <div class="container-3">
+        <div class="Container-3-box">
+            <h1>Box seven</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="Container-3-box">
+            <h1>Box eight</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa harum ducimus ipsa, reprehenderit incidunt impedit?</p>
+        </div>
+        <div class="Container-3-box">
+            <h1>Box nine</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facilis officia autem inventore, nobis iusto! Vel nihil assumenda accusamus eaque!</p>
+        </div>
+        <div class="Container-3-box">
+            <h1>Box ten</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facilis officia autem inventore, nobis iusto! Vel nihil assumenda accusamus eaque!</p>
+        </div>
+        <div class="Container-3-box">
+            <h1>Box Eleven</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facilis officia autem inventore, nobis iusto! Vel nihil assumenda accusamus eaque!</p>
+        </div>
+        <div class="Container-3-box">
+            <h1>Box tweleve</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facilis officia autem inventore, nobis iusto! Vel nihil assumenda accusamus eaque!</p>
+        </div>
+    </div>
+</body>
+</html>
