@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'JetBrains Mono', monospace cursive, sans-serif;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+  
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cta{
+    color: white;
+    border: 2px crimson solid;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 2rem;
+    transition: all 0.4s linear forwards;
+}
+.cta:hover{
+    background: crimson;
+    color: white;
+}
+.brand h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 0.4rem;
+}
+.brand h1 span{
+    color: crimson;
+}
+
+
+#hero{
+   background: url(./images/work.jpg); 
+   background-size: cover;
+   background-position: top center;
+   position: relative;
+   z-index: 1;
+}
+#hero::after{
+    content:'';
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#hero .hero{
+    /* margin: 0 auto; */
+    justify-content: flex-start;
+    padding: 0 20%;
+}
+#hero h1{
+    color: transparent;
+    /* letter-spacing: 0.2rem; */
+    font-size: 5rem;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    position: relative;
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 3s;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name 1s ease forwards;
+    animation-delay: 5s;
+    
+}
+#hero h1 span{
+    display: inline;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: crimson;
+    animation: text_reveal_box 2s ease backwards;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 4s;
+}
+
+
+
+/* Services */
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 10px;
+    max-width: 1500px;
+}
+#services .section-title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+   font-weight: 300;
+}
+#services .section-title span{
+    color: crimson;
+}
+#services .service-top p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+#services .service-bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+#services .service-item{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: url(./images/image1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
+#services .service-item::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.493);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#services .service-bottom .icon{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 25px;
+}
+#services .service-bottom .icon .img{
+    height:100%; 
+    width: 100%;
+    object-fit: contain;
+}
+#services .service-item h3{
+    color:white;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+#services .service-item p{
+    color: rgba(255, 255, 255, 0.541);
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+/* end Services */
+
+/* projects */
+#projects .projects{
+    display: flex;
+    flex-direction: column;
+}
+#projects .section-title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#projects .section-title span{
+    color: crimson;
+}
+#projects .all-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#projects .project-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(10deg,#29323c,#485563);
+    color: white;
+    line-height: 2.5rem;
+}
+#projects .project-item h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+#projects .project-item h2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 5px;
+}
+#projects .project-item p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+#projects .project-image img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+#projects .project-image{
+    position: relative;
+}
+#projects .project-image::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(10deg,#29323c,#485563);
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+
+}
+#projects .project-item:hover .project-image {
+    transform: scale(1.1);
+}
+#projects .project-image{
+    transition: 1s ease;
+}
+
+/* end projects */
+
+/* About me */
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#about .section-title{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+#about .section-title span{
+    color: crimson;
+}
+#about .col-right h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+
+}
+#about .cta{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+#about .col-left .about-img{
+   position: relative;
+}
+#about .col-left .about-img::after{
+    content: '';
+    border: 5px solid crimson;
+    position: absolute;
+    top: 23px;
+    left: -22px;
+    height: 97%;
+    width: 97%;
+    z-index: -1;
+}
+/* end about me */
+
+/* contact info */
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contact .contact-title{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#contact .contact-title span{
+    color: crimson;
+}
+#contact .contact-items{
+    width: 400px;
+}
+#contact .contact-item{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0 black;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.5s ease box-shadow;
+}
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+#contact .icon{
+    width: 100px;
+    
+}
+#contact .contact-info h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+#contact .contact-info h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/* end contact info */
+
+/* footer */
+#footer{
+    background: linear-gradient(60deg, #3c4147 , #5f7388 );
+    box-sizing: border-box;
+}
+#footer .footer{
+    flex-direction: column;
+    min-height: 200px;
+    padding: 30px;
+    margin: 20px;
+}
+#footer .brand h2{
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+#footer .social-media{
+    display: flex;
+    margin: 15px;
+}
+#footer .social-item img{
+    height: 40px;
+    width: 40px;
+    margin: 0px 5px;
+    filter: grayscale(0);
+    transition: 0.4s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(1);
+}
+#footer p{
+    color: white;
+}
+/* end footer */
+
+/* keyframes */
+@keyframes text_reveal_box{
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+@keyframes text_reveal{
+    0%{
+        color: transparent;
+    }
+    
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    0%{
+        color: transparent;
+    }
+    
+    100%{
+        color: crimson;
+    }
+}
+/* end keyframes */
+
+/* media query */
+@media only screen and (min-width: 740px) {
+    .cta{
+        font-size: 3rem;
+    }
+    #hero h1{
+        font-size: 6rem;
+    }
+    #services .section-title{
+        font-size: 5.5rem;
+    }
+    #services .service-bottom{
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    #services .service-item{
+        width: 40%;
+        margin:20px;
+    }
+    #projects .projects{
+        margin: 0;
+    }
+    #projects .section-title{
+        font-size: 2.5rem;
+    }
+    
+    #projects .project-item{
+        margin: 0;
+        width: 80%;
+        flex-direction: row;
+        height: 100%;
+        border-radius: 0;
+        
+        
+  }
+  #projects .project-item:nth-child(even){
+      flex-direction: row-reverse;
+  }
+  #projects .project-info{
+      height: 303px;
+      width: 75%;
+  }
+
+  /* about me */
+  #about .about{
+      flex-direction: row;
+      /* padding: 50px; */
+      margin: 0;
+      padding: 50px;
+  }
+  #about img{
+      max-width: 100%;
+      max-height: 100%;
+  }
+  #about .about-img{
+     height: 250px;
+     width: 300px;
+  }
+  #about .col-left .about-img{
+    position: relative;
+ }
+ #about .col-left .about-img::after{
+     content: '';
+     border: 5px solid crimson;
+     position: absolute;
+     top: 18px;
+     left: 5px;
+     height: 245px;
+     width: 250px;
+     z-index: -1;
+ }
+ #about .col-right{
+     text-align: left;
+     padding-left: 15px;
+ }
+  /* end about me */
+
+
+  /* contact */
+
+#contact .contact{
+    justify-content: center;
+    min-height: 20vh;
+    margin-bottom: 50px;
+    margin-top: 0%;
+}
+#contact .contact-items{
+    width: 100%;
+    display: flex;
+    
+}
+#contact .contact-item{
+    margin: 20px;
+    flex-direction: column;
+    gap:10px;
+}
+#contact .icon{
+    height: 80px;
+    width: 80px;
+    
+    
+}
+#contact .icon img{
+    height: 100%;
+    width: 100%;
+    
+}
+  /* end contact */
+} 
+/*end media query */
